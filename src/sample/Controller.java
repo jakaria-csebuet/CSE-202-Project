@@ -44,7 +44,7 @@ public class Controller {
 
     String color[] = {"RED" , "BLACK" , "BLUE" , "GREEN"} ;
 
-    int[] arr = new int[16];
+    int[] arr = new int[64];
     int i = 0 ;
     int num = 0 ;
 
@@ -53,19 +53,20 @@ public class Controller {
     public void mouseClicked(MouseEvent e) {
         Rectangle rec = (Rectangle) e.getSource() ;
         int j = (int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) ;
+        int k = (int) rec.getId().charAt(5) - 48 ;
         //System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48)) ;
-        if(arr[j] >= 1){}
+        if (k==0){
+            System.out.println("Target opponent!!");
+        }
+        else if(arr[j] >= 1){
+            System.out.println("Target another block!!");
+        }
         else {
             rec.setFill((Paint.valueOf(color[i++ % 4])));
             arr[j] += 1 ;
             num++ ;
             System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num) ;
-            try {
-                Thread.sleep(2000);
-            } catch (InterruptedException e1) {
-                e1.printStackTrace();
-            }
-            if(num == 16) System.exit(0);
+            if(num == 66) System.exit(0);
         }
     }
 }
