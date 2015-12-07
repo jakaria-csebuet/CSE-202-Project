@@ -46,6 +46,7 @@ public class Controller {
 
     int[] arr = new int[16];
     int i = 0 ;
+    int num = 0 ;
 
 
     @FXML
@@ -57,7 +58,14 @@ public class Controller {
         else {
             rec.setFill((Paint.valueOf(color[i++ % 4])));
             arr[j] += 1 ;
-            System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48)) ;
+            num++ ;
+            System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num) ;
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e1) {
+                e1.printStackTrace();
+            }
+            if(num == 16) System.exit(0);
         }
     }
 }
