@@ -2,47 +2,23 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
 
 
 public class Controller {
-    @FXML
-    private Rectangle rec00 ;
-
-    @FXML
-    private Rectangle rec01 ;
-    @FXML
-    private Rectangle rec02 ;
-    @FXML
-    private Rectangle rec03 ;
-    @FXML
-    private Rectangle rec04 ;
-    @FXML
-    private Rectangle rec05 ;
-    @FXML
-    private Rectangle rec06 ;
-    @FXML
-    private Rectangle rec07 ;
-    @FXML
-    private Rectangle rec08 ;
-    @FXML
-    private Rectangle rec09 ;
-    @FXML
-    private Rectangle rec10 ;
-    @FXML
-    private Rectangle rec11 ;
-    @FXML
-    private Rectangle rec12 ;
-    @FXML
-    private Rectangle rec13 ;
-    @FXML
-    private Rectangle rec14 ;
-    @FXML
-    private Rectangle rec15 ;
-
 
     String color[] = {"RED" , "BLACK" , "BLUE" , "GREEN"} ;
+
+    Boolean[] target = {false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,false,
+            false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
+            true,true,false,false,false,false,false,false,false,false,false,true,true,true,true,false,
+            false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,} ;
+
+    void setTarget(Boolean[] target){
+        this.target = target ;
+    }
 
     int[] arr = new int[64];
     int i = 0 ;
@@ -61,12 +37,21 @@ public class Controller {
         else if(arr[j] >= 1){
             System.out.println("Target another block!!");
         }
-        else {
-            rec.setFill((Paint.valueOf(color[i++ % 4])));
+        else if(target[j]) {
+            rec.setFill(Color.rgb(77,0,0));
             arr[j] += 1 ;
             num++ ;
-            System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num) ;
-            if(num == 66) System.exit(0);
+            System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num + "Opponent Damaged") ;
+            if(num == 64) return;
         }
+
+        else {
+            rec.setFill(Color.rgb(20,40,82));
+            arr[j] += 1 ;
+            num++ ;
+            System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num ) ;
+            if(num == 64) return;
+        }
+
     }
 }
