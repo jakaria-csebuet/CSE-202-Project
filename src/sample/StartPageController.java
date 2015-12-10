@@ -23,6 +23,9 @@ public class StartPageController {
 
     public void enterOnAction(ActionEvent event){
         playerName = textField.getText() ;
+        if (playerName.length() == 0){
+            playerName = "Anonymous" ;
+        }
         System.out.println(playerName);
         try {
             main.showSetShip();

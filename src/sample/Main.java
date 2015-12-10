@@ -20,14 +20,14 @@ public class Main extends Application {
         showStartPage();
     }
 
-    private void showBattleFiend() throws Exception{
+    public void showBattleFiend() throws Exception{
         FXMLLoader loader = new FXMLLoader() ;
         loader.setLocation(getClass().getResource("sample.fxml"));
         root = loader.load();
 
         root.setId("pane");
         Scene scene = new Scene(root, 1024, 568) ;
-        //scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         stage.setTitle("Battleships");
         stage.setScene(scene);
         stage.show();
@@ -38,9 +38,13 @@ public class Main extends Application {
         loader.setLocation(getClass().getResource("setship.fxml"));
         root = loader.load();
 
+        ShipController controller = loader.getController() ;
+        controller.setMain(this);
+
         root.setId("pane");
+        stage.setResizable(false);
         Scene scene = new Scene(root, 1024, 568) ;
-        //scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         stage.setTitle("Battleships");
         stage.setScene(scene);
         stage.show();

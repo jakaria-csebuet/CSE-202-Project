@@ -1,15 +1,17 @@
 package sample;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.shape.Rectangle;
 
 
 public class Controller {
 
-    String color[] = {"RED" , "BLACK" , "BLUE" , "GREEN"} ;
+    @FXML
+    Label massage ;
+    //String color[] = {"RED" , "BLACK" , "BLUE" , "GREEN"} ;
 
     Boolean[] target = {false,false,false,true,true,true,false,false,false,false,false,false,false,false,false,false,
             false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,
@@ -32,16 +34,18 @@ public class Controller {
         int k = (int) rec.getId().charAt(5) - 48 ;
         //System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48)) ;
         if (k==0){
-            System.out.println("Target opponent!!");
+            massage.setText("Target opponent!!");
         }
         else if(arr[j] >= 1){
             System.out.println("Target another block!!");
+            massage.setText("Target another block!!");
         }
         else if(target[j]) {
             rec.setFill(Color.rgb(77,0,0));
             arr[j] += 1 ;
             num++ ;
             System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num + "Opponent Damaged") ;
+            massage.setText("");
             if(num == 64) return;
         }
 
@@ -50,6 +54,7 @@ public class Controller {
             arr[j] += 1 ;
             num++ ;
             System.out.println((int)rec.getId().charAt(3) * 10 + (int) rec.getId().charAt(4)-(480+48) + " " + num ) ;
+            massage.setText("");
             if(num == 64) return;
         }
 

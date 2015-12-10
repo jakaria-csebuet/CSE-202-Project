@@ -1,29 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
-<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StartPageController">
    <children>
-      <TextField fx:id="textField" layoutX="255.0" layoutY="225.0" prefHeight="39.0" prefWidth="238.0" promptText="Anonymous">
+      <TextField fx:id="textField" layoutX="256.0" layoutY="194.0" prefHeight="39.0" prefWidth="238.0" promptText="Anonymous">
          <font>
             <Font size="18.0" />
          </font>
+         <effect>
+            <ColorAdjust />
+         </effect>
       </TextField>
-      <Button fx:id="enter" layoutX="255.0" layoutY="297.0" mnemonicParsing="false" onAction="#enterOnAction" prefHeight="30.0" prefWidth="128.0" text="Enter">
+      <Button fx:id="enter" layoutX="256.0" layoutY="251.0" mnemonicParsing="false" onAction="#enterOnAction" prefHeight="30.0" prefWidth="128.0" text="Enter">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label layoutX="103.0" layoutY="231.0" text="Enter Your Name">
+      <Label layoutX="97.0" layoutY="200.0" text="Enter Your Name">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="149.0" fitWidth="329.0" layoutX="155.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="149.0" fitWidth="329.0" layoutX="136.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/battleship.png" />
          </image>

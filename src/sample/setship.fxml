@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.image.*?>
@@ -9,131 +10,131 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShipController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShipController">
     <children>
-        <Pane layoutX="118.0" layoutY="18.0" prefHeight="498.0" prefWidth="807.0" translateX="10.0" translateY="10.0" translateZ="100.0">
+        <Pane layoutX="64.0" layoutY="19.0" onKeyTyped="#keyOnAction" prefHeight="452.0" prefWidth="871.0" translateX="10.0" translateY="10.0" translateZ="100.0">
             <children>
-                <Rectangle fx:id="rec0000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0001" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0010" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0031" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0011" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0030" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0020" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0021" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0002" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0003" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0012" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0033" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0013" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0032" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0022" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0023" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0004" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0005" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0014" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0035" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0015" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0034" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0024" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0025" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0006" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0007" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0016" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0037" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0017" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0036" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0026" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0027" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0040" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0041" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0050" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0071" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0051" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0070" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0060" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0061" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec00042" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0043" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0052" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0073" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0053" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0072" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0062" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0063" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0044" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0045" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0054" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0075" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0055" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0074" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0064" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0065" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0046" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0047" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0056" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0077" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0057" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0076" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0066" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0067" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0009" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="27.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0018" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0039" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0019" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0038" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="147.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0028" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0029" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0048" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0049" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="187.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0058" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0079" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0059" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="227.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0078" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="307.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0068" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0069" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0091" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0090" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0080" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="328.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0081" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="368.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0093" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0092" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0082" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="408.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0083" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="448.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0095" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0094" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0084" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="488.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0085" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="528.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0097" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0096" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0086" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="568.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0087" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="608.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0099" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0098" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="387.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0088" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="648.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec0089" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="688.0" layoutY="347.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <ImageView fx:id="airCarrier" fitHeight="40.0" fitWidth="187.0" layoutX="495.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+                <Rectangle fx:id="rec0000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0001" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0010" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0031" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0011" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0030" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0020" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0021" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0002" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0003" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0012" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0033" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0013" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0032" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0022" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0023" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0004" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0005" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0014" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0035" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0015" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0034" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0024" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0025" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0006" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0007" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0016" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0037" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0017" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0036" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0026" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0027" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0040" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0041" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0050" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0071" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0051" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0070" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0060" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0061" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec00042" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0043" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0052" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0073" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0053" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0072" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0062" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0063" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0044" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0045" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0054" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0075" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0055" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0074" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0064" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0065" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0046" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0047" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0056" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0077" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0057" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0076" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0066" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0067" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0009" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0018" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0039" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0019" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0038" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0028" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0029" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="106.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0048" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0049" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0058" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0079" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0059" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0078" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0068" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0069" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0091" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0090" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0080" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0081" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0093" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0092" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0082" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="435.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0083" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="475.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0095" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0094" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0084" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="515.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0085" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="555.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0097" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0096" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0086" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="595.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0087" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="635.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0099" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0098" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0088" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0089" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <ImageView fx:id="airCarrier" fitHeight="40.0" fitWidth="187.0" layoutX="39.0" layoutY="95.0" onKeyTyped="#keyOnAction" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_airCarrierh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="destroyer" fitHeight="40.0" fitWidth="178.0" layoutX="348.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+            <ImageView fx:id="destroyer" fitHeight="40.0" fitWidth="178.0" layoutX="52.0" layoutY="166.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_cruiserh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="cruiser" fitHeight="40.0" fitWidth="108.0" layoutX="334.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="cruiser" fitHeight="40.0" fitWidth="108.0" layoutX="58.0" layoutY="236.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_destroyerh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="submarine" fitHeight="40.0" fitWidth="138.0" layoutX="488.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="submarine" fitHeight="40.0" fitWidth="138.0" layoutX="46.0" layoutY="294.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_submarineh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="boat" fitHeight="40.0" fitWidth="72.0" layoutX="456.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="boat" fitHeight="40.0" fitWidth="72.0" layoutX="70.0" layoutY="356.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_boath.png" />
                </image>
@@ -146,6 +147,21 @@
                 <DropShadow />
             </effect>
         </Pane>
+      <Button fx:id="startBattle" layoutX="498.0" layoutY="497.0" mnemonicParsing="false" onAction="#battleOnAction" prefHeight="39.0" prefWidth="240.0" text="Go for Battle">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="113.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#setVertical" prefHeight="30.0" prefWidth="108.0" text="Set Vettica">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="248.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#setHorizontal" text="Set Horizontal">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
     </children>
     <rotationAxis>
         <Point3D x="34.0" y="34.0" z="34.0" />
