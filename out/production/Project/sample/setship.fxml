@@ -12,7 +12,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShipController">
     <children>
-        <Pane layoutX="64.0" layoutY="19.0" onKeyTyped="#keyOnAction" prefHeight="452.0" prefWidth="871.0" translateX="10.0" translateY="10.0" translateZ="100.0">
+        <Pane layoutX="63.0" layoutY="19.0" onKeyTyped="#keyOnAction" prefHeight="452.0" prefWidth="871.0" translateX="10.0" translateY="10.0" translateZ="100.0">
             <children>
                 <Rectangle fx:id="rec0000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="355.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0001" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="395.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
@@ -114,27 +114,27 @@
             <Rectangle fx:id="rec0098" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="386.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0088" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="675.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0089" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="715.0" layoutY="346.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <ImageView fx:id="airCarrier" fitHeight="40.0" fitWidth="187.0" layoutX="39.0" layoutY="95.0" onKeyTyped="#keyOnAction" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="airCarrier" fitHeight="40.0" fitWidth="187.0" layoutX="70.0" layoutY="48.0" onKeyTyped="#keyOnAction" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_airCarrierh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="destroyer" fitHeight="40.0" fitWidth="178.0" layoutX="52.0" layoutY="166.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="destroyer" fitHeight="40.0" fitWidth="178.0" layoutX="70.0" layoutY="118.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_cruiserh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="cruiser" fitHeight="40.0" fitWidth="108.0" layoutX="58.0" layoutY="236.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="cruiser" fitHeight="40.0" fitWidth="108.0" layoutX="78.0" layoutY="188.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_destroyerh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="submarine" fitHeight="40.0" fitWidth="138.0" layoutX="46.0" layoutY="294.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="submarine" fitHeight="40.0" fitWidth="138.0" layoutX="78.0" layoutY="246.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_submarineh.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="boat" fitHeight="40.0" fitWidth="72.0" layoutX="70.0" layoutY="356.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="boat" fitHeight="40.0" fitWidth="72.0" layoutX="78.0" layoutY="313.0" onMouseClicked="#selectShip" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/ship_boath.png" />
                </image>
@@ -152,7 +152,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button layoutX="113.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#setVertical" prefHeight="30.0" prefWidth="108.0" text="Set Vettica">
+      <Button layoutX="113.0" layoutY="502.0" mnemonicParsing="false" onMouseClicked="#setVertical" prefHeight="30.0" prefWidth="108.0" text="Set Vertical">
          <font>
             <Font size="14.0" />
          </font>

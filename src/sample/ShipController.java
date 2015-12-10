@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.shape.Rectangle;
@@ -59,11 +58,11 @@ public class ShipController {
     @FXML
     public void selectShip(MouseEvent e) {
         target = (ImageView)e.getSource() ;
-        System.out.println(e.getSource());
-        target.setOpacity(0.5);
+        //System.out.println(e.getSource());
+        //target.setOpacity(0.5);
        // target.setRotate(90);
        // target.relocate(522,174);
-        System.out.println("Selected");
+        System.out.println(target);
         //target = null ;
     }
 
@@ -73,12 +72,48 @@ public class ShipController {
         rectangle = (Rectangle)event.getSource() ;
         layoutX = rectangle.getLayoutX() ;
         layoutY = rectangle.getLayoutY() ;
-        System.out.println(rectangle + " " + layoutX +  " " + layoutY);
+        moveImage() ;
+        /*System.out.println(rectangle + " " + layoutX +  " " + layoutY);
         //target.relocate(layoutX,layoutX);
         target.setLayoutX(layoutX);
         target.setLayoutY(layoutY);
-        target.setOpacity(1);
+        target.setOpacity(1);*/
 
+    }
+
+
+
+    public void moveImage() throws InterruptedException {
+        target.relocate(layoutX,layoutY);
+        //target = null ;
+       if (vertical && target==airCarrier) {
+            target.setRotate(90);
+            target.setTranslateX(-70);
+            target.setTranslateY(80);
+        }
+
+        else if (vertical && target== destroyer){
+            target.setRotate(90);
+            target.setTranslateX(-60);
+            target.setTranslateY(60);
+        }
+        else if (vertical && target== cruiser){
+            target.setRotate(90);
+            target.setTranslateX(-35);
+            target.setTranslateY(45);
+        }
+
+        else if (vertical && target== submarine){
+            target.setRotate(90);
+            target.setTranslateX(-40);
+            target.setTranslateY(40);
+        }
+
+        else if (vertical && target== boat){
+            target.setRotate(90);
+            target.setTranslateX(-15);
+            target.setTranslateY(20);
+        }
     }
 
     @FXML
