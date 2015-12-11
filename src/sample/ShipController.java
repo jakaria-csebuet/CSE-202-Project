@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 
 /**
@@ -16,6 +17,14 @@ import javafx.scene.shape.Rectangle;
 public class ShipController {
 
     Main main ;
+
+    private boolean[] pos = new boolean[100]  ;
+
+    @FXML
+    Pane player ;
+
+    @FXML
+    Pane opponent ;
 
     private Double layoutX ;
     private Double layoutY ;
@@ -36,6 +45,12 @@ public class ShipController {
     Button startBattle ;
 
     @FXML
+    Button setVertical ;
+
+    @FXML
+    Button setHorizontal ;
+
+    @FXML
     ImageView airCarrier ;
     @FXML
     ImageView boat ;
@@ -48,11 +63,21 @@ public class ShipController {
 
     @FXML
     public void battleOnAction(ActionEvent event){
-        try {
+        player.setTranslateX(-270);
+        opponent.setDisable(false);
+        opponent.setVisible(true);
+        startBattle.setDisable(true);
+        startBattle.setVisible(false);
+        setHorizontal.setDisable(true);
+        setVertical.setDisable(true);
+        setVertical.setVisible(false);
+        setHorizontal.setVisible(false);
+
+        /**try {
             main.showBattleFiend();
         }catch (Exception e){
             e.printStackTrace();
-        }
+        }*/
     }
 
     @FXML
@@ -85,6 +110,8 @@ public class ShipController {
 
     public void moveImage() throws InterruptedException {
         target.relocate(layoutX,layoutY);
+        System.out.println((int)rectangle.getId().charAt(3) -48);
+        pos[(int)rectangle.getId().charAt(3) - 48] =true ;
         //target = null ;
        if (vertical && target==airCarrier) {
             target.setRotate(90);
@@ -93,7 +120,7 @@ public class ShipController {
         }
 
         else if (vertical && target== destroyer){
-            target.setRotate(90);
+            target.setRotate(90); // no comment to mention This is too much bool shit
             target.setTranslateX(-60);
             target.setTranslateY(60);
         }
@@ -113,6 +140,11 @@ public class ShipController {
             target.setRotate(90);
             target.setTranslateX(-15);
             target.setTranslateY(20);
+        }
+        target.setDisable(true);
+
+        for (Boolean x:pos){
+            System.out.print(x + " ");
         }
     }
 

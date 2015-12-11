@@ -2,12 +2,24 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 
 public class Controller {
+    ShipController controller ;
+
+    @FXML
+    ImageView air = controller.airCarrier ;
+
+    public void reloc(int id){
+        Rectangle rectangle = null;
+        rectangle.setId("rec"  + id + 0);
+        System.out.println(rectangle.getLayoutX()) ;
+        //rectangle.getId() ;
+    }
 
     @FXML
     Label massage ;
