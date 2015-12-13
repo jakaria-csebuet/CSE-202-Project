@@ -142,6 +142,7 @@ public class ShipController {
             target.setTranslateY(20);
         }
         target.setDisable(true);
+        
 
         for (Boolean x:pos){
             System.out.print(x + " ");
