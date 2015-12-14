@@ -84,7 +84,7 @@ public class ShipController {
     public void selectShip(MouseEvent e) {
         target = (ImageView)e.getSource() ;
         //System.out.println(e.getSource());
-        //target.setOpacity(0.5);
+        target.setOpacity(0.5);
        // target.setRotate(90);
        // target.relocate(522,174);
         System.out.println(target);
@@ -101,14 +101,15 @@ public class ShipController {
         /*System.out.println(rectangle + " " + layoutX +  " " + layoutY);
         //target.relocate(layoutX,layoutX);
         target.setLayoutX(layoutX);
-        target.setLayoutY(layoutY);
-        target.setOpacity(1);*/
+        target.setLayoutY(layoutY);*/
+
 
     }
 
 
 
     public void moveImage() throws InterruptedException {
+        target.setOpacity(1);
         target.relocate(layoutX,layoutY);
         System.out.println((int)rectangle.getId().charAt(3) -48);
         pos[(int)rectangle.getId().charAt(3) - 48] =true ;
