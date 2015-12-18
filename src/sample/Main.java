@@ -1,10 +1,8 @@
 package sample;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -43,7 +41,7 @@ public class Main extends Application {
 
         root.setId("pane");
         stage.setResizable(false);
-        Scene scene = new Scene(root, 1024, 568) ;
+        Scene scene = new Scene(root, 1024, 578) ;
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
         stage.setTitle("Battleships");
         stage.setScene(scene);
@@ -61,9 +59,19 @@ public class Main extends Application {
         root.setId("pane");
         Scene scene = new Scene(root, 600, 400) ;
         scene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
+        stage.setMaxHeight(579);
+        stage.setMaxWidth(1025);
         stage.setTitle("Battleships");
         stage.setScene(scene);
         stage.show();
+    }
+
+    void setFullScreen(){
+        stage.setMaximized(true);
+    }
+
+    void resetFullScreen(){
+        stage.setMaximized(false);
     }
 
 

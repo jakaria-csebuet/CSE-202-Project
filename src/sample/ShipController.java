@@ -5,11 +5,15 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
+import javafx.stage.Stage;
 
 /**
  * Created by MD on 08/12/2015.
@@ -18,7 +22,11 @@ public class ShipController {
 
     Main main ;
 
-    private boolean[] pos = new boolean[100]  ;
+    ShipPosition position = new ShipPosition() ;
+    OpponentGrid grid = new OpponentGrid() ;
+
+    @FXML
+    AnchorPane anchorPane ;
 
     @FXML
     Pane player ;
@@ -42,6 +50,8 @@ public class ShipController {
     private ImageView target ;
 
     @FXML
+    Label turn ;
+    @FXML
     Button startBattle ;
 
     @FXML
@@ -62,6 +72,10 @@ public class ShipController {
     ImageView submarine ;
 
     @FXML
+    Rectangle rec0021 ;
+
+
+    @FXML
     public void battleOnAction(ActionEvent event){
         player.setTranslateX(-270);
         opponent.setDisable(false);
@@ -72,6 +86,8 @@ public class ShipController {
         setVertical.setDisable(true);
         setVertical.setVisible(false);
         setHorizontal.setVisible(false);
+        turn.setDisable(false);
+        turn.setVisible(true);
 
         /**try {
             main.showBattleFiend();
@@ -81,20 +97,27 @@ public class ShipController {
     }
 
     @FXML
-    public void selectShip(MouseEvent e) {
-        target = (ImageView)e.getSource() ;
+    synchronized public void selectShip(MouseEvent e) {
+        System.out.println(e);
+        target = (ImageView) e.getSource() ;
+        System.out.println(target);
+        /**target.setOpacity(.5);
+        System.out.println(target);
+        //target = (ImageView)e.getSource() ;
         //System.out.println(e.getSource());
-        target.setOpacity(0.5);
+       // target.setOpacity(0.5);
        // target.setRotate(90);
        // target.relocate(522,174);
-        System.out.println(target);
-        //target = null ;
+      //  System.out.println(target);
+       // target = null ;
+        //target = null ;*/
     }
 
     @FXML
-    public void recSelect(MouseEvent event) throws Exception {
+    synchronized public void recSelect(MouseEvent event) throws Exception {
         if (target == null) return;
         rectangle = (Rectangle)event.getSource() ;
+        System.out.println(rectangle);
         layoutX = rectangle.getLayoutX() ;
         layoutY = rectangle.getLayoutY() ;
         moveImage() ;
@@ -106,13 +129,42 @@ public class ShipController {
 
     }
 
+    @FXML
+    public void recAction(MouseEvent event) throws Exception {
+        rectangle = (Rectangle)event.getSource() ;
+        int pos = (int)rectangle.getId().charAt(3)*10 + (int)rectangle.getId().charAt(4) - 528 ;
+        System.out.println(pos);
+        System.out.println(grid.getPos(pos));
+        Rectangle rectangle1 = rec0021 ;
+        if (grid.getPos(pos)){
+            rectangle.setFill(Color.RED);
+            rec0021.setFill(Color.RED);
+           // AudioClip sound = new AudioClip("sounds/strike.mp3");
+           // sound.play();
+        }
+        else {
+            rectangle.setFill(Color.BLANCHEDALMOND);
+        }
+        anchorPane.setTranslateX(1);
+        anchorPane.setTranslateX(-1);
+        //layoutX = rectangle.getLayoutX() ;
+        //layoutY = rectangle.getLayoutY() ;
+       // moveImage() ;
+        /*System.out.println(rectangle + " " + layoutX +  " " + layoutY);
+        //target.relocate(layoutX,layoutX);
+        target.setLayoutX(layoutX);
+        target.setLayoutY(layoutY);*/
 
 
-    public void moveImage() throws InterruptedException {
+    }
+
+
+
+   synchronized public void moveImage() throws InterruptedException {
         target.setOpacity(1);
         target.relocate(layoutX,layoutY);
-        System.out.println((int)rectangle.getId().charAt(3) -48);
-        pos[(int)rectangle.getId().charAt(3) - 48] =true ;
+        int pos = (int)rectangle.getId().charAt(5)*10 + (int)rectangle.getId().charAt(6) - 528 ;
+        System.out.println(pos);
         //target = null ;
        if (vertical && target==airCarrier) {
             target.setRotate(90);
@@ -143,21 +195,26 @@ public class ShipController {
             target.setTranslateY(20);
         }
         target.setDisable(true);
-        
 
-        for (Boolean x:pos){
-            System.out.print(x + " ");
-        }
+        if (target==airCarrier) position.setPos(5,vertical,pos);
+        else if (target==destroyer) position.setPos(4,vertical,pos);
+        else if (target==cruiser || target == submarine) position.setPos(3,vertical,pos);
+        else if (target==boat) position.setPos(2,vertical,pos);
+
+        position.printPos();
+
+       main.setFullScreen();
+       main.resetFullScreen();
     }
 
     @FXML
-    public void setVertical(MouseEvent event){
+    public void setVertical(ActionEvent event){
         vertical = true ;
         System.out.println(vertical);
     }
 
     @FXML
-    public void setHorizontal(MouseEvent event){
+    public void setHorizontal(ActionEvent event){
         vertical = false ;
         System.out.println(vertical);
     }
