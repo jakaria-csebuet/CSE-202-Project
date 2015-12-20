@@ -9,9 +9,9 @@ import javafx.scene.control.TextField;
  * Created by MD on 10/12/2015.
  */
 public class StartPageController {
-    Main main ;
+    BattleShip main ;
 
-    private String playerName ;
+    String playerName ;
 
     @FXML
     TextField textField ;
@@ -27,6 +27,7 @@ public class StartPageController {
             playerName = "Anonymous" ;
         }
         System.out.println(playerName);
+        main.player = playerName ;
         try {
             main.showSetShip();
         }catch (Exception e){
@@ -36,7 +37,7 @@ public class StartPageController {
 
     }
 
-    public void setMain(Main main) {
+    public void setMain(BattleShip main) {
         this.main = main;
     }
 

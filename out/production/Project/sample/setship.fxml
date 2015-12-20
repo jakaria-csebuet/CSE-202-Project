@@ -54,7 +54,7 @@
             <Rectangle fx:id="rec0070" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="271.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0060" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="271.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0061" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="311.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec00042" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="351.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0042" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="351.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0043" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="391.0" layoutY="186.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0052" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="351.0" layoutY="226.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0073" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="391.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
@@ -78,7 +78,7 @@
             <Rectangle fx:id="rec0076" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="511.0" layoutY="306.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0066" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="511.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0067" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="551.0" layoutY="266.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
-            <Rectangle fx:id="rec000" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="591.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+            <Rectangle fx:id="rec0008" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="591.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0009" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="631.0" layoutY="26.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0018" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="591.0" layoutY="66.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
             <Rectangle fx:id="rec0039" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="631.0" layoutY="146.0" onMouseClicked="#recSelect" stroke="BLACK" strokeType="INSIDE" width="40.0" />
@@ -266,7 +266,7 @@
             <Rectangle fx:id="rec991" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="40.0" layoutX="374.0" layoutY="355.0" onMouseClicked="#recAction" stroke="BLACK" strokeType="INSIDE" width="40.0" />
          </children>
       </Pane>
-      <Label fx:id="turn" layoutX="451.0" layoutY="500.0" text="Connecting..." textFill="RED" visible="false">
+      <Label fx:id="turn" layoutX="451.0" layoutY="500.0" text="Connecting..." textFill="#f00900" visible="false">
          <font>
             <Font size="24.0" />
          </font>

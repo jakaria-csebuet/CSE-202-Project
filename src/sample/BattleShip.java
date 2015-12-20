@@ -5,9 +5,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+public class BattleShip extends Application {
     Stage stage ;
     Parent root ;
+    String player ;
 
 
     @Override

@@ -28,4 +28,8 @@ public class ShipPosition {
             System.out.print(pos[i] + "  ");
         }
     }
+
+    boolean getPos(int index){
+        return pos[index] ;
+    }
 }
